@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 import com.mbugajski.springdemo.hib.entity.Course;
 import com.mbugajski.springdemo.hib.entity.Instructor;
 import com.mbugajski.springdemo.hib.entity.InstructorDetail;
-import com.mbugajski.springdemo.hib.entity.Student;
+import com.mbugajski.springdemo.hib.entity.Review;
 
 public class DeleteCourseDemo {
 
@@ -17,6 +17,7 @@ public class DeleteCourseDemo {
 				.addAnnotatedClass(Instructor.class)
 				.addAnnotatedClass(InstructorDetail.class)
 				.addAnnotatedClass(Course.class)
+				.addAnnotatedClass(Review.class)
 				.buildSessionFactory();
 
 		Session session = factory.getCurrentSession();
